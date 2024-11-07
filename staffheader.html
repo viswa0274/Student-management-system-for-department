@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Staff Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #002C54;
+            padding: 40px 0;
+            text-align: left;
+            padding-left: 20px;
+            padding-right: 20px;
+            width: 300px;
+            height: 100vh;
+            color: white;
+            position: fixed; /* Make the header fixed */
+            top: 0;
+            left: 0;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            margin: 0;
+            gap: 10px;
+        }
+
+        nav ul li {
+            margin: 0;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+            transition: background-color 0.3s;
+            display: block;
+            background-color: transparent;
+            border-radius: 0;
+            padding: 10px 15px;
+        }
+
+        nav ul li a:hover {
+            background-color: #575757;
+        }
+
+        nav {
+            margin-top: 20px;
+        }
+
+        /* Ensure the main content does not overlap with the fixed header */
+        .main-content {
+            margin-left: 320px; /* Adjust according to header width */
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Staff Dashboard</h1>
+        <nav>
+            <ul>
+                <li><a href="staffpanel.php">Home</a></li>
+                <li><a href="attendance.php">Upload Attendance and Internal mark</a></li>
+                
+                <li><a href="uploadassmarks.php">Upload Assignment and Seminar Marks</a></li>
+                <li><a href="uploadexternalmarks.php">Upload External Marks</a></li>
+				<li><a href="viewattendance.php">View Attendance</a></li>
+				<li><a href="viewmarks.php">View Marks</a></li>
+                <li><a href="logout.php">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="main-content">
+        <!-- Main content goes here -->
+    </div>
+</body>
+</html>

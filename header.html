@@ -1,0 +1,88 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+			
+        }
+h1{
+color : white;}
+        header {
+            background-color:   #002C54 ;
+            padding: 40px 0;
+            text-align: left;
+            padding-left: 20px;
+            padding-right: 20px;
+            width: 300px;
+            height: 100vh;n
+            color: white;
+            position: fixed; /* Make the header fixed */
+            top: 0;
+            left: 0;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 15px;
+			
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            margin: 0;
+            gap: 10px;
+        }
+
+        nav ul li {
+            margin: 0;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+            transition: background-color 0.3s;
+            display: block;
+            background-color: transparent;
+            border-radius: 0;
+            padding: 10px 15px;
+        }
+
+        nav ul li a:hover {
+            background-color: #575757;
+        }
+
+        nav {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Admin Dashboard</h1>
+        <nav>
+            <ul>
+                <li><a href="adminpanel.php">Home</a></li>
+                <li><a href="select.php">Add Student details</a></li>
+                <li><a href="studetails.php">View Student Details</a></li>
+                <li><a href="addstaff.php">Add Staff</a></li>
+                <li><a href="staffdet.php">View Staff Details</a></li>
+				<li><a href="addsubjects.php">Add Subjects</a></li>
+                <li><a href="subjects.php">Allocate Subjects</a></li>
+                <li><a href="adminpass.php">Update Password</a></li>
+                <li><a href="logout.php">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+</body>
+</html>

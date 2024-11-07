@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Your Role</title>
+    <link rel="stylesheet" href="homepage.css">
+</head>
+<style>
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.button {
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    padding: 15px 30px;
+    border: 2px solid white;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.button:hover {
+    background-color: #555;
+    transform: scale(1.05);
+}
+
+</style>
+<body>
+    <div class="container">
+        <h1>Select Your Role</h1>
+        <div class="buttons">
+            <a href="adminlogin.php" class="button">Admin</a>
+            <a href="stafflogin.php" class="button">Staff</a>
+            <a href="students.php" class="button">Students</a>
+        </div>
+    </div>
+</body>
+</html>
